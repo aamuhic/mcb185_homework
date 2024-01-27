@@ -67,39 +67,39 @@ def volrect(l, w, h): 			                           # volume of a rectangle
 	return (l * w * h)
 print(volrect(3, 2, 8))
 
-def sacylinder(r, h): 			                           # surface area of a cylinder
-	if r <= 0: sys.exit('error: r must be greater than 0') # r = radius
-	if h <= 0: sys.exit('error: h must be greater than 0') # h = height
+def sacylinder(r, h):
+	if r <= 0: sys.exit('error: r must be greater than 0')
+	if h <= 0: sys.exit('error: h must be greater than 0')
 	return (2 * math.pi * r * h)
 print(sacylinder(4, 9))
 
-def celciuskelvin(c): 			                           # convert celcius to kelvin
-	return (c + 273)                                       # c = temp in celcius
+def celciuskelvin(c):
+	return (c + 273)
 print(celciuskelvin(25))
 
-def fahrenheitcelcius(f): 		                          # convert fahrenheit to celcius
-	return ((f - 32) * (5 / 9))                           # f = temp in fahrenheit
+def fahrenheitcelcius(f):
+	return ((f - 32) * (5 / 9))
 print(fahrenheitcelcius(100))
 
-def mphkph(m): 					                          # convert mph to kph
-	if m < 0: sys.exit('error: m must be greater than 0') # m = speed in mph
+def mphkph(m):
+	if m < 0: sys.exit('error: m must be greater than 0')
 	return (m * 1.609)
 print(mphkph(65))
 
-def fpsmph(f): 					                          # convert fps to mph
-	if f < 0: sys.exit('error: f must be greater than 0') # f = speed in fps
+def fpsmph(f):
+	if f < 0: sys.exit('error: f must be greater than 0')
 	return (f * (3600 / 5280))
 print(fpsmph(100))
 
-def concdna(o): 				                         # find [DNA] from OD260
-	return print(o * 50) 		                         # o = optical density at 260 nm
-concdna(2)
+def concdna(o):
+	return o * 50
+return concdna(2)
 
-def disxy(x1, y1, x2, y2):                               # find distance between 2 points
+def disxy(x1, y1, x2, y2):
 	return math.sqrt((x1 - x2)**2 + (y1 - y2)**2)
 print(disxy(3, 0, 0, 4))
 
-def midpoint(x1, y1, x2, y2):                           # find midpoint between 2 points
+def midpoint(x1, y1, x2, y2):
 	mx = (x1 + x2) / 2
 	my = (y1 + y2) / 2
 	return mx, my

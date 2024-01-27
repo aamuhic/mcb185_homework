@@ -13,7 +13,7 @@ def shannon_nt(a, c, g, t):
 		h = (ai + ci + gi + ti) * -1
 		return h
 	elif a == 0 or t == 0 or g == 0 or c == 0:
-		ap = ((a + 1) / (tot + 4)) * math.log2((a + 1) / (tot + 4)) # pseudo-count
+		ap = ((a + 1) / (tot + 4)) * math.log2((a + 1) / (tot + 4))
 		cp = ((c + 1) / (tot + 4)) * math.log2((c + 1) / (tot + 4))
 		gp = ((g + 1) / (tot + 4)) * math.log2((g + 1) / (tot + 4))
 		tp = ((t + 1) / (tot + 4)) * math.log2((t + 1) / (tot + 4))

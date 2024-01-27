@@ -3,7 +3,7 @@
 import math
 import sys
 
-def quadratic_formula(a, b, c):                            # a*x**2 + b*x + c
+def quadratic_formula(a, b, c):
 	d = b**2 - 4*a*c
 	if d < 0: 
 		return None, None
