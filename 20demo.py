@@ -55,15 +55,15 @@ def signswitch(a):
 print (signswitch(10))
 print (signswitch(-2))
 
-def areacirc(r):                                           # area of a circle 
-	if r <= 0: sys.exit('error: r must be greater than 0') # r = radius of circle
+def areacirc(r):
+	if r <= 0: sys.exit('error: r must be greater than 0')
 	return (math.pi * r**2)
 print(areacirc(4))
 
-def volrect(l, w, h): 			                           # volume of a rectangle
-	if l <= 0: sys.exit('error: l must be greater than 0') # l = length
-	if w <= 0: sys.exit('error: w must be greater than 0') # w = width
-	if h <= 0: sys.exit('error: h must be greater than 0') # h = height
+def volrect(l, w, h):
+	if l <= 0: sys.exit('error: l must be greater than 0')
+	if w <= 0: sys.exit('error: w must be greater than 0')
+	if h <= 0: sys.exit('error: h must be greater than 0')
 	return (l * w * h)
 print(volrect(3, 2, 8))
 
