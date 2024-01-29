@@ -42,7 +42,7 @@ print(type(a), type(b), type(c))
 print(type(a), type(b), type(c), sep=', ')
 
 # functions
-def pythagoras (a, b):
+def pythagoras(a, b):
 	if a <= 0: sys.exit('error: a must be greater than 0')
 	if b <= 0: sys.exit('error: b must be greater than 0')
 	return math.sqrt(a**2 + b**2)
@@ -51,44 +51,44 @@ print(pythagoras(1, 1))
 
 # practice
 def signswitch(a):
-	return (a * -1)
-print (signswitch(10))
-print (signswitch(-2))
+	return a * -1
+print(signswitch(10))
+print(signswitch(-2))
 
 def areacirc(r):
 	if r <= 0: sys.exit('error: r must be greater than 0')
-	return (math.pi * r**2)
+	return math.pi * r**2
 print(areacirc(4))
 
 def volrect(l, w, h):
 	if l <= 0: sys.exit('error: l must be greater than 0')
 	if w <= 0: sys.exit('error: w must be greater than 0')
 	if h <= 0: sys.exit('error: h must be greater than 0')
-	return (l * w * h)
+	return l * w * h
 print(volrect(3, 2, 8))
 
 def sacylinder(r, h):
 	if r <= 0: sys.exit('error: r must be greater than 0')
 	if h <= 0: sys.exit('error: h must be greater than 0')
-	return (2 * math.pi * r * h)
+	return 2 * math.pi * r * h
 print(sacylinder(4, 9))
 
 def celciuskelvin(c):
-	return (c + 273)
+	return c + 273
 print(celciuskelvin(25))
 
 def fahrenheitcelcius(f):
-	return ((f - 32) * (5 / 9))
+	return f - 32 * (5 / 9)
 print(fahrenheitcelcius(100))
 
 def mphkph(m):
 	if m < 0: sys.exit('error: m must be greater than 0')
-	return (m * 1.609)
+	return m * 1.609
 print(mphkph(65))
 
 def fpsmph(f):
 	if f < 0: sys.exit('error: f must be greater than 0')
-	return (f * (3600 / 5280))
+	return f * (3600 / 5280)
 print(fpsmph(100))
 
 def concdna(o):
@@ -158,7 +158,7 @@ print(is_integer(2))
 print(is_integer(2.1))
 
 def is_odd(n):
-	if (n%2) != 0: return True
+	if n % 2 != 0: return True
 	return False
 print(is_odd(36))
 print(is_odd(37))
