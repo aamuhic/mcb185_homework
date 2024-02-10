@@ -2,7 +2,6 @@
 
 import random 
 
-"""
 games = 10
 for i in range(games):
 	print(f'game #{i}')
@@ -19,7 +18,6 @@ for i in range(games):
 		if random.randint(1, 6) + random.randint(1, 6) == target:
 			score += target
 	print(score)
-"""
 
 games = 1000000
 log = games // 100
