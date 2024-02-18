@@ -36,8 +36,8 @@ stdv = math.sqrt(totdv / len(lengths))
 
 
 lengths.sort()
-x1 = lengths[len(lengths) // 2 - 1] # fix
-x2 = lengths[len(lengths) // 2]     # fix, check
+x1 = lengths[len(lengths) // 2 - 1]
+x2 = lengths[len(lengths) // 2] 
 if math.isclose(len(lengths) % 2, 0):
 	median = (x1 + x2) / 2
 else:
