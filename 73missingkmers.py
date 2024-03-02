@@ -20,11 +20,11 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 			if kmerneg not in kcount: kcount[kmerneg] = 0
 			kcount[kmerneg] += 1
 		
-		n = 0
+		missing = False
 		for nts in itertools.product('ACGT', repeat=k):
 			kmer = ''.join(nts)
-			if kmer not in kcount: n += 1
+			if kmer not in kcount:
+				missing = True
+				print(kmer)
 			
-		if n >= 1:
-			print(f'k={k} n={n}')
-			break
+		if missing: break
