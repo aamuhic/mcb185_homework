@@ -5,12 +5,12 @@ import mcb185
 import dogma
 import itertools
 
-kcount = {}
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	print(f'>{defline}')
 	rev = dogma.revcomp(seq)
 	
 	for k in range(len(seq)):
+		kcount = {}
 		for i in range(len(seq) -k +1):
 			kmerpos = seq[i:i+k]
 			if kmerpos not in kcount: kcount[kmerpos] = 0
